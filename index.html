@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJ'S Multi-Purpose Studio, Attapur – Space for Rent</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap">
+<style>
+:root{--blue:#00539C;--yellow:#FFD662;--ink:#1c2b3a;--mute:#5b6b7b;--tint:#FFF6D9;--line:#e3e8ee}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--ink);font-family:Manrope,"Segoe UI",Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.hero{background:var(--blue);color:#fff;border-bottom:10px solid var(--yellow);padding:52px 0 40px}
+.hero h1{font-size:clamp(30px,6vw,52px);font-weight:800;line-height:1.08;color:#fff;max-width:760px}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:#dbe8f5;margin-top:14px;max-width:560px;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:#fff;color:var(--blue);border-radius:12px;padding:14px 12px;text-align:center}
+.stat b{display:block;font-size:26px;font-weight:800;line-height:1.1}
+.stat span{font-size:13px;color:var(--mute);font-weight:600}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{color:var(--blue);font-size:25px;font-weight:800;margin-bottom:6px}
+.sub{color:var(--mute);margin-bottom:22px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:800px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{border:2px solid var(--line);border-radius:12px;padding:18px}
+.card.y{background:var(--tint);border-color:var(--yellow)}
+.card.b{background:var(--blue);border-color:var(--blue);color:#fff}
+.card h3{font-size:17px;color:var(--blue);margin-bottom:4px}
+.card.b h3{color:var(--yellow)}
+.card p{font-size:14px}
+.big{font-size:26px;font-weight:800;color:var(--blue);line-height:1.15;margin-top:8px}
+.b .big{color:var(--yellow)}
+.small{font-size:13px;color:var(--mute)}
+.b .small{color:#cfe0f1}
+.amen{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:800px){.amen{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.amen{grid-template-columns:repeat(2,1fr)}}
+.am{border:2px solid var(--blue);border-radius:12px;padding:16px 8px;text-align:center;font-weight:800;color:var(--blue);font-size:15px}
+.am svg{display:block;margin:0 auto 8px;width:34px;height:34px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:2px solid var(--blue);color:var(--blue);font-weight:600;font-size:15px;padding:7px 14px;border-radius:99px}
+.chips span.y{background:var(--yellow);border-color:var(--yellow)}
+.chips.no span{border-color:#c9a000;background:var(--tint);color:#6b5300;font-size:14px;padding:5px 12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{background:var(--blue);color:#fff;text-align:left;padding:11px 14px}
+td{padding:11px 14px;border-bottom:1px solid var(--line)}
+td.p{font-weight:800;color:var(--blue);white-space:nowrap;text-align:right}
+th:last-child{text-align:right}
+.scroll{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+.sched{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:640px){.sched{grid-template-columns:repeat(2,1fr)}}
+.save{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.save .card{flex:1;min-width:180px;text-align:center}
+.save .arrow{color:var(--blue);font-size:26px;font-weight:800}
+.cta{background:var(--blue);color:#fff;border-radius:16px;padding:38px 28px;text-align:center;border-bottom:8px solid var(--yellow);margin:40px 0}
+.cta h2{color:var(--yellow);font-size:30px}
+.cta p{color:#dbe8f5;margin:8px 0 4px}
+.cta .name{font-size:22px;font-weight:800}
+.cta .num{font-size:32px;font-weight:800;color:var(--yellow);text-decoration:none;display:inline-block;margin:4px 0 18px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;padding:13px 24px;border-radius:99px;text-decoration:none}
+.btn.wa{background:#25D366;color:#073b1b}
+.btn.call{background:var(--yellow);color:var(--blue)}
+.btn:focus-visible,.num:focus-visible{outline:3px solid #fff;outline-offset:3px}
+footer{text-align:center;color:var(--mute);font-size:13px;padding-bottom:36px}
+@media print{section{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="wrap">
+  <div style="display:inline-block;background:var(--yellow);color:var(--blue);font-weight:800;font-size:15px;padding:6px 14px;border-radius:99px;margin-bottom:18px">DJ'S Multi-Purpose Studio, Attapur</div>
+  <h1>A ready-to-use <span>2,000 sq.ft.</span> space for your classes, workshops and shows</h1>
+  <p>DJ'S Multi-Purpose Studio, Attapur, on Janapriya Utopia Road. Rent by the hour, the day or the month.</p>
+  <div class="stats">
+    <div class="stat"><b>2,000</b><span>sq.ft. of space</span></div>
+    <div class="stat"><b>100</b><span>chairs ready</span></div>
+    <div class="stat"><b>3</b><span>washrooms</span></div>
+    <div class="stat"><b>Lift</b><span>1st floor access</span></div>
+  </div>
+</div></div>
+
+<main class="wrap">
+
+<section>
+  <h2 style="margin-bottom:22px">What's in the room</h2>
+  <div class="amen"><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="8" rx="2"/><path d="M7 17c0 2 2 2 2 4M12 17c0 2 2 2 2 4M17 17c0 2 2 2 2 4"/></svg>Air conditioning</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18V9h14v9M8 9V5M16 9V5M3 5h18"/></svg>Stage</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r=".8"/></svg>Wi-Fi</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Smart TV</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="12" cy="14.5" r="3"/><circle cx="12" cy="7" r="1"/></svg>Sound system</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v8H7zM6 12h12v3H6zM8 15v5M16 15v5"/></svg>100 chairs</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="5" r="2"/><path d="M5 21v-8l-1-3h8l-1 3v8M17 4v17M14 21h6"/></svg>3 washrooms</div><div class="am"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 10l3-3 3 3M9 14l3 3 3-3"/></svg>Lift access</div></div>
+</section>
+
+<section>
+  <h2>What you can do here</h2>
+  <p class="sub">One space, set up for many uses.</p>
+  <div class="chips">
+    <span>Dance</span><span>Zumba</span><span>Yoga</span><span>Fitness</span><span>Music classes</span><span>Tuition and coaching</span><span>Spoken English</span><span>Computer training</span><span>Art and craft</span><span>Workshops</span><span>Seminars</span><span>Rehearsals</span><span class="y">Standup shows</span><span class="y">Small events</span><span>Photo and reel shoots</span><span>Community meetings</span>
+  </div>
+</section>
+
+<section>
+  <h2>Pick the space that fits</h2>
+  <p class="sub">Launch rates. Final price depends on day, hours and extras.</p>
+  <div class="grid g4">
+    <div class="card"><h3>Classroom</h3><p class="small">Tuition, NEET/JEE, spoken English, computer and corporate training</p><div class="big">₹600–800<span class="small"> /hour</span></div></div>
+    <div class="card"><h3>Dance and fitness</h3><p class="small">Dance, Zumba, yoga, aerobics, martial arts, rehearsals</p><div class="big">₹700–1,000<span class="small"> /hour</span></div></div>
+    <div class="card"><h3>Workshops</h3><p class="small">Seminars, personality development, beauty and art workshops, small corporate sessions</p><div class="big">₹2,500–4,500<span class="small"> /session</span></div></div>
+    <div class="card y"><h3>Shows and events</h3><p class="small">Standup shows, birthdays, baby showers, community meetings</p><div class="big">₹4,000–7,000</div></div>
+  </div>
+  <div class="card b" style="margin-top:14px"><h3>100-seater training, workshop and show space</h3><p>Chairs are already in the room. Book it and start. No arranging an empty hall.</p></div>
+</section>
+
+<section>
+  <h2>Simple packages</h2>
+  <p class="sub">The more you book, the better the rate.</p>
+  <div class="grid g2">
+    <div class="scroll"><table>
+      <tr><th>Hourly</th><th>Rate</th></tr>
+      <tr><td>Weekday</td><td class="p">₹750 /hour</td></tr>
+      <tr><td>Weekend</td><td class="p">₹1,000 /hour</td></tr>
+    </table>
+    <table>
+      <tr><th>Bundles</th><th>Price</th></tr>
+      <tr><td>3 hours, weekday</td><td class="p">₹2,000</td></tr>
+      <tr><td>3 hours, weekend</td><td class="p">₹2,750</td></tr>
+      <tr><td>5 hours</td><td class="p">₹3,750</td></tr>
+      <tr><td>Full day, 12 PM – 10 PM</td><td class="p">₹7,500</td></tr>
+    </table></div>
+    <div class="scroll"><table>
+      <tr><th>Add-ons</th><th>Charge</th></tr>
+      <tr><td>Projector</td><td class="p">₹500–1,000</td></tr>
+      <tr><td>Sound system</td><td class="p">₹500–1,500</td></tr>
+      <tr><td>Cleaning</td><td class="p">₹250–500</td></tr>
+      <tr><td>Refundable security deposit</td><td class="p">₹2K–5K</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section>
+  <h2>Run a regular class? Book a monthly batch</h2>
+  <p class="sub">Same slot every week at a fixed monthly price, from ₹15,000 to ₹30,000 depending on hours.</p>
+  <div class="save">
+    <div class="card"><div class="small">Mon–Fri, 6–8 PM, hourly</div><div class="big">₹30,100</div><div class="small">about 43 hours at ₹700</div></div>
+    <div class="arrow">→</div>
+    <div class="card b"><div class="small">Monthly batch package</div><div class="big">₹24–27K</div><div class="small">fixed, no surprises</div></div>
+    <div class="arrow">→</div>
+    <div class="card y"><div class="small">You save about</div><div class="big">₹3–6K</div><div class="small">every month</div></div>
+  </div>
+  <p class="small" style="margin-top:14px">Example only. Your price depends on days and hours.</p>
+</section>
+
+<section>
+  <h2>Open hours</h2>
+  <p class="sub">12 PM – 10:30 PM, with cleanup and closing by 11 PM.</p>
+  <div class="sched">
+    <div class="card"><h3>12 – 3 PM</h3><p class="small">Tuition, kids classes, computer training</p></div>
+    <div class="card"><h3>3 – 5 PM</h3><p class="small">Dance, music, art, spoken English</p></div>
+    <div class="card"><h3>5 – 7 PM</h3><p class="small">Dance, Zumba, yoga, fitness</p></div>
+    <div class="card"><h3>7 – 10:30 PM</h3><p class="small">Adult classes, rehearsals, workshops, shows</p></div>
+  </div>
+</section>
+
+<section style="border:none">
+  <h2>House rules</h2>
+  <p class="sub">We share the building with neighbours, so we keep sound and crowds under control.</p>
+  <div class="chips no" style="margin-bottom:14px">
+    <span>No high-volume events</span><span>No illegal activities</span><span>No alcohol unless legally permitted and approved</span><span>No smoking</span><span>No firecrackers</span><span>No structural changes</span><span>No overcrowding</span>
+  </div>
+  <div class="card y"><p><b>Before you book:</b> you are responsible for any permission or licence your activity needs. A security deposit, cleaning and damage charges, maximum occupancy, cancellation terms and closing time are part of the rental agreement.</p></div>
+</section>
+
+<div class="cta">
+  <h2>Book your slot</h2>
+  <p>Tell us what you plan to run and when. We'll confirm availability and price.</p>
+  <div class="name">Contact Shankar</div>
+  <a class="num" href="tel:+917330651300">7330651300</a>
+  <div class="btns">
+    <a class="btn wa" href="https://wa.me/917330651300?text=Hi%20Shankar%2C%20I%27d%20like%20to%20book%20the%20DJ%27S%20Multi-Purpose%20Studio%2C%20Attapur." target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.4-.2-2.5.7.7-2.4-.3-.4A8 8 0 0 1 12 4z"/></svg>Chat on WhatsApp</a>
+    <a class="btn call" href="tel:+917330651300">Call now</a>
+  </div>
+</div>
+
+<footer>DJ'S Multi-Purpose Studio, Attapur · Janapriya Utopia Road, 1st floor, lift available · Rates are launch rates and may change.</footer>
+</main>
+</body>
+</html>
